@@ -1,0 +1,17 @@
+{
+  "name": "profile-data",
+  "version": "1.0.0",
+  "description": "",
+  "main": "./src/convertToJSON",
+  "scripts": {
+    "convert": "ts-node ."
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/node": "^18.15.11",
+    "ts-node": "^10.9.1",
+    "typescript": "^5.0.4"
+  }
+}
