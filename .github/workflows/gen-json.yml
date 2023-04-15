@@ -1,0 +1,27 @@
+name: Convert TS Object to JSON String and output to JSON File
+
+on: workflow_dispatch
+
+jobs:
+  convert:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - uses: actions/setup-node@v3
+        with:
+          node-version: 18
+          registry-url: https://registry.npmjs.org/
+      - name: Clean Install Dependencies
+        run: npm ci
+      - name: Convert to JSON
+        run: npm run convert
+      - name: Commit new JSON
+        run: |
+          git config --local user.email "github-actions[bot]@users.noreply.github.com"
+          git config --local user.name "github-actions[bot]"
+          git add src/assets/data.json
+          git commit -m "Updated Data JSON"
+      - name: Push changes
+        uses: ad-m/github-push-action@master
+        with:
+          branch: ${{github.head_ref}}
