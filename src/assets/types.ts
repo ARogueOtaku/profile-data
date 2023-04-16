@@ -1040,6 +1040,7 @@ export type TWorkExperience = {
   location: string;
   remote: boolean;
   description: string | string[];
+  technologies?: string[];
   clients: string[];
 };
 
