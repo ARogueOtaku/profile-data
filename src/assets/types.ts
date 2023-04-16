@@ -25,6 +25,10 @@ type EEducationRatingType = "GPA" | "CGPA" | "PERCENT" | "PERCENTILE";
 export type TCountry = keyof typeof COUNTRY_CODES;
 
 export const COUNTRY_CODES = {
+  "N/A": {
+    dial_code: "",
+    code: "",
+  },
   Afghanistan: {
     dial_code: "+93",
     code: "AF",
