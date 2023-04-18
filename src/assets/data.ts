@@ -5,12 +5,12 @@ const profileData: TProfile = {
     name: "Amit Das",
     job: "FrontEnd Developer",
     aboutMe:
-      "Front End Developer with 5+ Years of experience working with JavaScript, HTML/CSS and React to deliver exceptional customer experiences. Able to effectively self-manage during independent projects, as well as collaborate in a team setting.",
+      "I am a mid-level React developer with 5.5 years of experience in building web applications. My passion lies in creating exceptional user experiences through front-end design and layout, while my ability to handle complex features with ease ensures high performance and minimal bugs. I have expertise in React, Redux, GraphQL, React Router, Material UI, and TailwindCSS, which allows me to bring any idea to life. I have also dabbled in back-end development, writing SQL queries and creating basic REST APIs using NodeJS and Express. I love collaborating with others and thrive in a team environment, and I am always eager to explore new technologies and push the boundaries of what's possible in web development.",
   },
   address: [
     {
       type: "CITY",
-      name: "Kolakata",
+      name: "Kolkata",
     },
     {
       type: "COUNTRY",
@@ -24,7 +24,7 @@ const profileData: TProfile = {
   email: "amit.rockinad.das@gmail.com",
   socials: [
     {
-      label: "Github",
+      label: "GitHub",
       url: "https://github.com/arogueotaku",
     },
     {
